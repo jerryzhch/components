@@ -1,8 +1,8 @@
-import faker from "faker";
-import React from "react";
-import ReactDOM from "react-dom";
-import CommentDetail from "./CommentDetail";
-import ApprovalCard from "./ApprovalCard";
+import faker from 'faker';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import CommentDetail from './CommentDetail';
+import ApprovalCard from './ApprovalCard';
 
 const App = () => {
   return (
@@ -14,33 +14,18 @@ const App = () => {
         </div>
       </ApprovalCard>
       <ApprovalCard>
-        <CommentDetail
-          author="Sam"
-          timeAgo="Today at 4:45PM"
-          content="this is awesome!"
-          avatar={faker.image.avatar()}
-        />
+        <CommentDetail author="Sam" timeAgo="Today at 4:45PM" content="this is awesome!" avatar={faker.image.business()} />
       </ApprovalCard>
 
       <ApprovalCard>
-        <CommentDetail
-          author="Alex"
-          timeAgo="Today at 2:00PM"
-          content="this is amazing!"
-          avatar={faker.image.avatar()}
-        />
+        <CommentDetail author="Alex" timeAgo="Today at 2:00PM" content="this is amazing!" avatar={faker.image.avatar()} />
       </ApprovalCard>
 
       <ApprovalCard>
-        <CommentDetail
-          author="Jane"
-          timeAgo="Yesterday at 4:00PM"
-          content="this is epic!"
-          avatar={faker.image.avatar()}
-        />
+        <CommentDetail author="Jane" timeAgo="Yesterday at 4:00PM" content="this is epic!" avatar={faker.image.avatar()} />
       </ApprovalCard>
     </div>
   );
 };
 
-ReactDOM.render(<App />, document.querySelector("#root"));
+ReactDOM.render(<App />, document.querySelector('#root'));
